@@ -27,10 +27,18 @@ export default class FilterObject extends Component {
         }
     }
 
+    //Purpose: Update the user input for each change.
+    //Parameters: event, the event that took place.
+    //returns: none
+    //outcome: user input state is updated.
     updateUserInput = (event) => {
         this.setState({userInput: event.target.value});
     }
     
+    //Purpose: filters an array of object for objects that do not contain the given property.
+    //Parameters: none
+    //returns: none
+    //outcome: filteredArry state is updated.
     filterArray = () => {
         //create variable for the unfilted and filtered array.
         let tempUnfiltered = this.state.unfilteredArray;

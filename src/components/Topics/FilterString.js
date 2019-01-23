@@ -10,6 +10,10 @@ export default class FilterString extends Component {
         }
     }
 
+    //Purpose: Update the user input for each change.
+    //Parameters: event, the event that took place.
+    //returns: none
+    //outcome: user input state is updated.
     updateUserInput = (event) => {
         this.setState({
             userInput: event.target.value
